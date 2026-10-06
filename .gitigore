@@ -1,0 +1,19 @@
+# Build output
+/espalier
+/espalier-desktop
+/dist/
+*.exe
+*.test
+*.out
+
+# Go tooling
+/vendor/
+coverage.*
+
+# Wails frontend (M4; harmless now)
+/cmd/espalier-desktop/frontend/node_modules/
+/cmd/espalier-desktop/fronend/dist/
+
+# Editors
+.vscode/
+.idea/
