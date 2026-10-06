@@ -12,7 +12,7 @@ coverage.*
 
 # Wails frontend (M4; harmless now)
 /cmd/espalier-desktop/frontend/node_modules/
-/cmd/espalier-desktop/fronend/dist/
+/cmd/espalier-desktop/frontend/dist/
 
 # Editors
 .vscode/
