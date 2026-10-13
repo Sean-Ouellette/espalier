@@ -7,11 +7,14 @@ Tea) + desktop (Wails v3, embedded pty terminal). Full design:
 
 ## How Claude works in this repo
 
-- **The user writes all code.** This is a learning project for Go and GitHub
-  integration. Claude explains, points to docs, reviews, and helps debug. Do
-  not write implementation files, scaffold packages, or run `gh`/`git` write
-  commands on the user's behalf. Short illustrative snippets in chat are fine.
-- Prefer teaching the Go idiom and the *why* over giving the answer.
+- **Claude writes the code, feature by feature; the user tests as we go.**
+  (Changed 2026-10-13 from the original "user writes all code" learning
+  setup.) Each feature: brainstorm/confirm the design, Claude implements with
+  tests, user runs it and reviews, then the user commits.
+- Explain the Go idioms and the *why* in chat as features land, so the
+  project still teaches Go and GitHub integration.
+- Claude does not run `gh`/`git` write commands (commit, push, PR) unless
+  asked; the user handles those.
 - Review feedback should cite `file:line` and name the Go concept involved.
 
 ## Layout (see spec §3.1)
